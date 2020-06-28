@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Candidate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Review this candidate</h1>
+        </section>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <label class="form-elements" for="username">What is the Github username of the candidate?</label>
+                <input class="form-elements" id="username" type="text" required>
+
+                <label for="pet-select">Sort by</label>
+                <select name="sort" id="sort-select">
+                    <option value="full_name">Full Name</option>
+                    <option value="created">Create Date</option>
+                    <option value="updated">Update Date</option>
+                    <option value="pushed">Push Date</option>
+                </select>
+
+                <button class="form-elements" type="submit">See Repository</button>
+            </form>
+        </section>
+        <section class="hidden">
+            <h2>Search Results</h2>
+            <ul class="show-result">
+
+            </ul>
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

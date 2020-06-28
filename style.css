@@ -1,0 +1,19 @@
+section {
+    width: 90%;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-elements {
+    display: block;
+    margin: 12px 0;
+}
+
+@media all and (min-width:600px){
+    section {
+        width: 50%;
+    }
+}
